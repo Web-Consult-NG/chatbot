@@ -8,9 +8,10 @@ export async function POST (request) {
   })
 
   const openai = new OpenAIApi(configuration)
-  const recipeFormat = `Recipe Name: Chocolate Chip Cookies
+  const recipeFormat = `
+<h2>Recipe Name: Chocolate Chip Cookies</h2>
 
-Ingredients:
+<h3>Ingredients:</h3>
 
 - 2 1/4 cups all-purpose flour
 - 1 teaspoon baking soda
@@ -22,7 +23,7 @@ Ingredients:
 - 2 large eggs
 - 2 cups (12-oz. pkg.) semisweet chocolate chips
 
-Instructions:
+<h3>Instructions:</h3>
 
 1. Preheat oven to 375°F.
 2. In a medium bowl, combine flour, baking soda and salt; set aside.
